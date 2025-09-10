@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+.form {
+  width: 360px;
+}
+
+input {
+  width: 360px;
+}
+
+fieldset {
+  display: inline;
+  display: flex;
+  width: 360px;
+  min-inline-size: 0;
+}
+
+legend {
+  text-align: left;
+}
+
+label {
+  display: inline;
+  width: 104px;
+}
