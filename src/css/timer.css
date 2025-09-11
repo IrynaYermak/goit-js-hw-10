@@ -9,6 +9,7 @@ h1 {
 
 #datetime-picker {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #2e2f42;
@@ -35,21 +36,24 @@ button {
   border-radius: 8px;
   padding: 8px 16px;
   width: 75px;
-  background-color: #cfcfcf;
+  background-color: #4e75ff;
+  color: #fff;
   border: none;
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.04em;
-  color: #989898;
-  margin-left: 8px;
   margin-bottom: 32px;
   transition: background-color 250ms, color 250ms;
 }
 
-/* button:hover {
+button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+button:focus {
   background-color: #6c8cff;
-  color: #fff;
-} */
+}
 
 .timer {
   width: 346px;
@@ -61,6 +65,7 @@ button {
   margin: 0 auto;
 }
 .field {
+  height: 55px;
 }
 .value {
   font-size: 40px;
@@ -72,4 +77,31 @@ button {
   line-height: 150%;
   color: #2e2f42;
   text-transform: uppercase;
+}
+
+.flatpickr-calendar {
+  background-color: #f5f5f5;
+}
+
+.flatpickr-day {
+  color: #666;
+}
+
+.flatpickr-day:hover {
+  background-color: #c1c1c1;
+}
+
+.flatpickr-day.today {
+  background-color: transparent;
+  border-color: #4e75ff;
+}
+
+.flatpickr-day.selected {
+  background-color: #4e75ff;
+  border: #4e75ff;
+}
+
+.flatpickr-time input {
+  font-size: 16px;
+  color: #333;
 }
