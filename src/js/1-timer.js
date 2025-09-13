@@ -16,7 +16,19 @@ const options = {
   onClose(selectedDates) {
     console.log(selectedDates[0]);
     if (selectedDates[0].getTime() < Date.now()) {
-      window.alert('Please choose a date in the future');
+      // window.alert('Please choose a date in the future');
+      iziToast.error({
+        message: 'Please choose a date in the future',
+        messageColor: 'white',
+        position: 'topRight',
+        backgroundColor: 'rgb(239, 10, 10)',
+        icon: '',
+        close: false,
+        timeout: 5000,
+        progressBar: false,
+        class: 'big-toast',
+      });
+
       startBtn.setAttribute('disabled', true);
       return;
     }
@@ -41,7 +53,6 @@ function startClick() {
 
     if (timeMs <= 0) {
       clearInterval(idInt);
-      startBtn.removeAttribute('disabled');
       input.removeAttribute('disabled');
     } else {
       timeToDate = convertMs(timeMs);
