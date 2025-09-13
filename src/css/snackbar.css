@@ -2,18 +2,31 @@
   box-sizing: border-box;
 }
 .form {
+  display: flex;
+  flex-direction: column;
   width: 360px;
+  margin: 0 auto;
 }
 
 input {
+  padding: 8px 16px;
+  text-align: center;
+  border: 1px solid #808080;
+  border-radius: 4px;
   width: 360px;
 }
 
-fieldset {
-  display: inline;
+label > input[type='radio'] {
   display: flex;
+  flex-direction: row;
+}
+
+fieldset {
   width: 360px;
-  min-inline-size: 0;
+  padding: 48px 24px 48px 8px;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
 }
 
 legend {
@@ -21,6 +34,18 @@ legend {
 }
 
 label {
-  display: inline;
-  width: 104px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  background-color: #4e75ff;
+  margin-top: 24px;
 }

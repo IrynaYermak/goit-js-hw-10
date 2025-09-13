@@ -1,5 +1,6 @@
 import flatpickr from 'flatpickr';
 import iziToast from 'izitoast';
+// import icon from '/src/img/symbol-defs.svg';
 
 const input = document.getElementById('datetime-picker');
 const timer = document.querySelector('.timer');
@@ -23,7 +24,7 @@ const options = {
         position: 'topRight',
         backgroundColor: 'rgb(239, 10, 10)',
         // icon: '',
-        iconUrl: '..img/symbol-defs.svg#icon-error',
+        // iconUrl: '.img/symbol-defs.svg#icon-error',
         close: false,
         timeout: 5000,
         progressBar: false,
