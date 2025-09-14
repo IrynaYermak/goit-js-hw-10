@@ -23,7 +23,7 @@ const options = {
         messageColor: 'white',
         position: 'topRight',
         backgroundColor: 'rgb(239, 10, 10)',
-        // icon: '',
+        icon: '',
         // iconUrl: '.img/symbol-defs.svg#icon-error',
         close: false,
         timeout: 5000,
