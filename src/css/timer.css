@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+container {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -32,7 +37,7 @@ h1 {
   color: #000;
 }
 
-button {
+button[type='button'] {
   border-radius: 8px;
   padding: 8px 16px;
   width: 75px;
@@ -46,12 +51,12 @@ button {
   transition: background-color 250ms, color 250ms;
 }
 
-button:disabled {
+button[type='button']:disabled {
   background-color: #cfcfcf;
   color: #989898;
 }
 
-button:focus {
+button[type='button']:focus {
   background-color: #6c8cff;
 }
 
